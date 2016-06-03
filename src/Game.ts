@@ -1,4 +1,6 @@
-class Game
+import {CardDeck} from "./CardDeck";
+
+export class Game
 {
     static run(deck:CardDeck){
 

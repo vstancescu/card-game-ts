@@ -1,4 +1,5 @@
-interface CardDeckInterface
+import {Card} from "./Card";
+export interface CardDeckInterface
 {
     createDeck();
 

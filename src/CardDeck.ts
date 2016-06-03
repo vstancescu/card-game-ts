@@ -1,4 +1,8 @@
-class CardDeck implements CardDeckInterface {
+import {Card} from "./Card";
+import {CardDeckInterface} from "./CardDeckInterface";
+import {ColorType} from "./ColorType";
+
+export class CardDeck implements CardDeckInterface {
     private cards:Card[] = [];
 
     constructor() {

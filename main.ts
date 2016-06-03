@@ -2,11 +2,11 @@
  * File that initialize and run the application
  */
 
-///<reference path="./bootstrap" />
+import * as Application from './bootstrap';
 
-var deck = new CardDeck();
+var deck = new Application.CardDeck();
 deck.createDeck();
 console.log('New Project version');
 //for (var i = 0; i < 54; i++){
-Game.run(deck);
+Application.Game.run(deck);
 //}

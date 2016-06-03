@@ -1,9 +1,8 @@
 {
   "compilerOptions" : {
-    "module" : "none",
+    "module" : "amd",
     "target" : "es5",
-    "sourceMap" : false,
-    "outFile" : "main.min.js"
+    "sourceMap" : false
   },
   "exclude" : ["node_modules"]
 }

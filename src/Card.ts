@@ -1,4 +1,5 @@
-class Card
+import {ColorType} from "./ColorType";
+export class Card
 {
 
     constructor(number:number, color:ColorType) {
