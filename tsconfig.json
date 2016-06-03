@@ -3,7 +3,7 @@
     "module" : "none",
     "target" : "es5",
     "sourceMap" : false,
-    "outFile" : "projectFiles.js"
+    "outFile" : "main.min.js"
   },
   "exclude" : ["node_modules"]
 }

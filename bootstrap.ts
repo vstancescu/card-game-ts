@@ -1,10 +1,10 @@
 /**
- * File that initialize and run the application
+ * Main project file where I load all TS files from the project.
+ * Should always stay in root directory!!
  */
 
-var deck = new CardDeck();
-deck.createDeck();
-console.log('New Project version');
-//for (var i = 0; i < 54; i++){
-Game.run(deck);
-//}
+///<reference path="./src/CardDeckInterface" />
+///<reference path="./src/Card" />
+///<reference path="./src/ColorType" />
+///<reference path="./src/CardDeck" />
+///<reference path="./src/Game" />
