@@ -6,7 +6,7 @@
     "typescript" : "~1.8.*"
   },
   "scripts" : {
-    "run" : "node main.min.js"
+    "run" : "tsc -m CommonJS main.ts && node main.js"
   },
-  "main" : "main.min.js"
+  "main" : "main.js"
 }
