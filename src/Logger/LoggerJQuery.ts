@@ -3,6 +3,6 @@ export class LoggerJQuery implements Logger
 {
 
     log(...args:any[]):void {
-        jQuery('body').append('<p>ItWorks</p>');
+        jQuery('body').append('<p>' + args.map(function(arg) { return String(arg); }).join(' ') + '</p>');
     }
 }

@@ -1,6 +1,7 @@
 /**
  * File that initialize and run the application
  */
+///<reference path="./vendor/jquery/jquery.d.ts" />
 
 import * as Application from './bootstrap';
 import {LoggerFactory} from "./src/Logger/LoggerFactory";
