@@ -3,11 +3,8 @@
   <component name="TypeScriptCompiler">
     <option name="isCompilerEnabled" value="true" />
     <option name="typeScriptServiceDirectory" value="C:\Users\valentin.stancescu\AppData\Roaming\npm\node_modules\typescript\lib" />
-    <option name="typeScriptCompilerParams" value="--outFile projectFiles.js" />
-    <option name="nodeInterpreterTextField" value="C:\Program Files\nodejs\node.exe" />
-    <option name="hasOutDirectory" value="true" />
     <option name="mainFilePath" value="C:\xampp\htdocs\typescript-test\init.ts" />
-    <option name="useMainFile" value="true" />
+    <option name="useConfig" value="true" />
     <option name="versionType" value="SERVICE_DIRECTORY" />
   </component>
 </project>

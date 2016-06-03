@@ -1,0 +1,12 @@
+{
+  "name" : "CardDekGame",
+  "description" : "VS first TS projetc",
+  "version" : "1.0.0",
+  "devDependencies" : {
+    "typescript" : "~1.8.*"
+  },
+  "scripts" : {
+    "run" : "node projectFiles.js"
+  },
+  "main" : "projectFiles.js"
+}
