@@ -1,3 +1,6 @@
 .idea/*
 main.min.js
 /src/*.js
+bootstrap.js
+src/Game.js
+tsconfig.json.js
