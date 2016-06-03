@@ -1,17 +1,22 @@
 import {CardDeck} from "./CardDeck";
+import {Logger} from "./Logger/Logger";
 
 export class Game
 {
-    static run(deck:CardDeck){
+
+    constructor(private logger:Logger) {
+    }
+
+    public run(deck:CardDeck){
 
         deck.shuffleDeck(5);
 
         var cardEx = deck.getCard();
 
         if (cardEx.toString() == 'A clubs') {
-            console.log('WINNER!!');
+            this.logger.log('WINNER!!');
         } else {
-            console.log('LOOSER!!', cardEx.toString());
+            this.logger.log('LOOSER!!', cardEx.toString());
         }
 
     }

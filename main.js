@@ -1,12 +1,14 @@
 /**
  * File that initialize and run the application
  */
-define(["require", "exports", './bootstrap'], function (require, exports, Application) {
+define(["require", "exports", './bootstrap', "./src/Logger/LoggerFactory"], function (require, exports, Application, LoggerFactory_1) {
     "use strict";
-    var deck = new Application.CardDeck();
+    var logger = LoggerFactory_1.LoggerFactory.create();
+    var deck = new Application.CardDeck(logger);
+    var game = new Application.Game(logger);
     deck.createDeck();
-    console.log('New Project version');
+    logger.log('New Project version');
     //for (var i = 0; i < 54; i++){
-    Application.Game.run(deck);
+    game.run(deck);
 });
 //}

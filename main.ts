@@ -3,10 +3,15 @@
  */
 
 import * as Application from './bootstrap';
+import {LoggerFactory} from "./src/Logger/LoggerFactory";
 
-var deck = new Application.CardDeck();
+var logger = LoggerFactory.create();
+var deck = new Application.CardDeck(logger);
+var game = new Application.Game(logger);
+
+
 deck.createDeck();
-console.log('New Project version');
+logger.log('New Project version');
 //for (var i = 0; i < 54; i++){
-Application.Game.run(deck);
+game.run(deck);
 //}

@@ -1,11 +1,12 @@
 import {Card} from "./Card";
 import {CardDeckInterface} from "./CardDeckInterface";
 import {ColorType} from "./ColorType";
+import {Logger} from "./Logger/Logger";
 
 export class CardDeck implements CardDeckInterface {
     private cards:Card[] = [];
 
-    constructor() {
+    constructor(private logger:Logger) {
 
     }
 
@@ -16,7 +17,7 @@ export class CardDeck implements CardDeckInterface {
                 this.cards.push(new Card(i, color));
             }
         }
-        console.log('Card Deck created');
+        this.logger.log('Card Deck created');
 
     }
 
@@ -32,7 +33,7 @@ export class CardDeck implements CardDeckInterface {
                 this.cards[i - 1] = this.cards[j];
                 this.cards[j] = x;
             }
-            console.log('Shuffle no: ', t);
+            this.logger.log('Shuffle no: ', t);
         }
 
     }
