@@ -1,6 +1,7 @@
-main.min.js
+.idea/
+*.map
+/src/Logger/*.js
 /src/*.js
 bootstrap.js
 tsconfig.json.js
-.idea/
-/src/Logger/*.js
+main.min.js
