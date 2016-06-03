@@ -6,7 +6,7 @@
 
 var deck = new CardDeck();
 deck.createDeck();
-
-for (var i = 0; i < 54; i++){
+console.log('New Project version');
+//for (var i = 0; i < 54; i++){
     Game.run(deck);
-}
+//}

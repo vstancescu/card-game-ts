@@ -48,13 +48,6 @@ var Card = (function () {
     };
     return Card;
 }());
-var ColorType;
-(function (ColorType) {
-    ColorType[ColorType["clubs"] = 0] = "clubs";
-    ColorType[ColorType["diamonds"] = 1] = "diamonds";
-    ColorType[ColorType["hearts"] = 2] = "hearts";
-    ColorType[ColorType["spades"] = 3] = "spades";
-})(ColorType || (ColorType = {}));
 var CardDeck = (function () {
     function CardDeck() {
         this.cards = [];
@@ -87,6 +80,13 @@ var CardDeck = (function () {
     };
     return CardDeck;
 }());
+var ColorType;
+(function (ColorType) {
+    ColorType[ColorType["clubs"] = 0] = "clubs";
+    ColorType[ColorType["diamonds"] = 1] = "diamonds";
+    ColorType[ColorType["hearts"] = 2] = "hearts";
+    ColorType[ColorType["spades"] = 3] = "spades";
+})(ColorType || (ColorType = {}));
 var Game = (function () {
     function Game() {
     }
@@ -109,7 +109,8 @@ var Game = (function () {
 ///<reference path="Game" />
 var deck = new CardDeck();
 deck.createDeck();
-for (var i = 0; i < 54; i++) {
-    Game.run(deck);
-}
-//# sourceMappingURL=projectFiles.js.map
+console.log('New Project version');
+//for (var i = 0; i < 54; i++){
+Game.run(deck);
+//} 
+// THE FORMAT OF THE "tsconfig.json" file which should be located in the root of any typescript project

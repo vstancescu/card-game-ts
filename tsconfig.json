@@ -1,0 +1,9 @@
+{
+  "compilerOptions" : {
+    "module" : "none",
+    "target" : "es5",
+    "sourceMap" : false,
+    "outFile" : "projectFiles.js"
+  },
+  "exclude" : ["node_modules"]
+}
